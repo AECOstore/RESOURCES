@@ -16,5 +16,5 @@ rdfs:comment   """The welcome GUI of the AECOstore.""" ;
 
 <#p2> a mifesto:Page , mifesto:Component ;
     rdfs:comment "Store page" ;
-    mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/store-page/main/manifest> ;
+    mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/store-page/main/manifest.ttl> ;
     mifesto:hasRoute "/store" .
