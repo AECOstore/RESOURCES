@@ -11,10 +11,10 @@ rdfs:comment   """The welcome GUI of the AECOstore.""" ;
 
 <#p1> a mifesto:Page , mifesto:Component ;
     rdfs:comment "Welcome page" ;
-    mifesto:hasModule <https://pod.werbrouck.me/aecostore/manifests/welcome> ;
+    mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/welcome-page/main/manifest> ;
     mifesto:hasRoute "/" .
 
 <#p2> a mifesto:Page , mifesto:Component ;
     rdfs:comment "Store page" ;
-    mifesto:hasModule <https://pod.werbrouck.me/aecostore/manifests/store> ;
+    mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/store-page/main/manifest> ;
     mifesto:hasRoute "/store" .
