@@ -4,4 +4,4 @@
 <> a dcat:Catalog, mifesto:Store ;
     dcat:dataset <https://raw.githubusercontent.com/AECOstore/RESOURCES/main/stores/configstore.ttl> ,
     <https://raw.githubusercontent.com/AECOstore/RESOURCES/main/stores/modulestore.ttl> ,
-    <https://raw.githubusercontent.com/AECOstore/RESOURCES/main/stores/infrastructure.ttl> .
+    <https://raw.githubusercontent.com/AECOstore/RESOURCES/main/stores/infrastructure.ttl> . 
