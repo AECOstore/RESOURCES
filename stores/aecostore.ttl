@@ -1,0 +1,7 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix mifesto: <https://w3id.org/mifesto#> .
+
+<> a dcat:Catalog, mifesto:Store ;
+    dcat:dataset <https://raw.githubusercontent.com/AECOstore/RESOURCES/main/stores/configstore.ttl> ,
+    <https://raw.githubusercontent.com/AECOstore/RESOURCES/main/stores/modulestore.ttl> ,
+    <https://raw.githubusercontent.com/AECOstore/RESOURCES/main/stores/infrastructure.ttl> .
