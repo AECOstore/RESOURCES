@@ -1,0 +1,6 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+
+<> a dcat:Catalog ;
+    dcat:dataset <https://raw.githubusercontent.com/AECOstore/demo-page/main/public/manifest.ttl>, 
+    <https://raw.githubusercontent.com/AECOstore/project-page/main/public/manifest.ttl> ,
+    <https://raw.githubusercontent.com/AECOstore/auth-page/main/public/manifest.ttl> .

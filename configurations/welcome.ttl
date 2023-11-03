@@ -1,0 +1,20 @@
+@prefix pav: <http://purl.org/pav/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix mifesto: <http://w3id.org/mifesto#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+<> a mifesto:Configuration ;
+rdfs:comment   """The welcome GUI of the AECOstore.""" ;
+    mifesto:hosts <#p1>, <#p2>.
+
+<#p1> a mifesto:Page , mifesto:Component ;
+    rdfs:comment "Welcome page" ;
+    mifesto:hasModule <https://pod.werbrouck.me/aecostore/manifests/welcome> ;
+    mifesto:hasRoute "/" .
+
+<#p2> a mifesto:Page , mifesto:Component ;
+    rdfs:comment "Store page" ;
+    mifesto:hasModule <https://pod.werbrouck.me/aecostore/manifests/store> ;
+    mifesto:hasRoute "/store" .
