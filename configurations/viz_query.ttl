@@ -8,8 +8,15 @@
 <> a mifesto:Configuration ;
 rdfs:label "Query and Visualize" ;
 rdfs:comment   """This is a demo configuration, featuring a 3D geometry viewer and an SPARQL query module. Select elements with the query module and see the corresponding elements highlighted in the 3D viewer.""" ;
-    mifesto:hosts <#p3> ;
+    mifesto:hosts <#p1>, <#p2>, <#p3> ;
     mifesto:initialRoute "/project".
+
+<#p1> a mifesto:Page , mifesto:Component ;
+    rdfs:comment "This is the demo page of the application" ;
+    mifesto:hasDimensionSetting <#dimset1> ;
+    mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/demo-page/main/manifest.ttl> ;
+    mifesto:hosts <#m1>, <#m2> ;
+    mifesto:hasRoute "/" .
 
 <#p3> a mifesto:Page , mifesto:Component ;
     rdfs:comment "This is the project page of the application" ;
@@ -18,6 +25,23 @@ rdfs:comment   """This is a demo configuration, featuring a 3D geometry viewer a
     mifesto:hasRoute "/project" .
 
 <#dimset1> a mifesto:GridDimensionSetting .
+
+<#p2> a mifesto:Page , mifesto:Component , mifesto:AuthPage ;
+    rdfs:comment "This is the auth page of the application" ;
+    mifesto:hasRoute "/auth" ;
+    mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/auth-page/main/manifest.ttl> .
+
+<#m1> a mifesto:Component, mifesto:OrganisationalComponent ;
+    mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/tabs-module/main/manifest.ttl> ;
+    mifesto:hasDimensions <#dim1> ;
+    mifesto:hosts <#m1_1>.
+
+<#m1_1> a mifesto:Component ;
+    mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/query-module/main/manifest.ttl> ;
+    
+<#m2> a mifesto:Component ;
+    mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/viewer-module/main/manifest.ttl> ;
+    mifesto:hasDimensions <#dim2> .
 
 <#dim1> mifesto:initialColumns 5 ;
     mifesto:initialRows 8 .    
