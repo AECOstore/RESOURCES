@@ -37,7 +37,7 @@ rdfs:comment   """This is a demo configuration, featuring a 3D geometry viewer a
     mifesto:hosts <#m1_1>.
 
 <#m1_1> a mifesto:Component ;
-    mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/query-module/main/manifest.ttl> ;
+    mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/query-module/main/manifest.ttl> .
     
 <#m2> a mifesto:Component ;
     mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/viewer-module/main/manifest.ttl> ;
