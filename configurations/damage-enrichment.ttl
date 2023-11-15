@@ -6,8 +6,8 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 
 <> a mifesto:Configuration ;
-rdfs:label "Query and Visualize" ;
-rdfs:comment   """This is a demo configuration, featuring a 3D geometry viewer and an SPARQL query module. Select elements with the query module and see the corresponding elements highlighted in the 3D viewer.""" ;
+rdfs:label "Damage enrichment" ;
+rdfs:comment   """This is a demo configuration, featuring a damage enrichment module which dynamically loads other modules based on the available project data.""" ;
     mifesto:hosts <#p1>, <#p2>, <#p3> ;
     mifesto:initialRoute "/project".
 
