@@ -2,3 +2,4 @@
 
 <> a dcat:Catalog ;
     dcat:dataset <https://raw.githubusercontent.com/AECOstore/RESOURCES/main/configurations/viz_query.ttl> .
+    dcat:dataset <https://raw.githubusercontent.com/AECOstore/RESOURCES/main/configurations/damage-enrichment.ttl> .

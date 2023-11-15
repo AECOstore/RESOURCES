@@ -1,0 +1,33 @@
+@prefix pav: <http://purl.org/pav/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix mifesto: <http://w3id.org/mifesto#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+<> a mifesto:Configuration ;
+rdfs:label "Query and Visualize" ;
+rdfs:comment   """This is a demo configuration, featuring a 3D geometry viewer and an SPARQL query module. Select elements with the query module and see the corresponding elements highlighted in the 3D viewer.""" ;
+    mifesto:hosts <#p1>, <#p2>, <#p3> ;
+    mifesto:initialRoute "/project".
+
+<#p1> a mifesto:Page , mifesto:Component ;
+    rdfs:comment "This is the demo page of the application" ;
+    mifesto:hasDimensionSetting <#dimset1> ;
+    mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/demo-page/main/manifest.ttl> ;
+    mifesto:hosts <#m1> ;
+    mifesto:hasRoute "/" .
+
+<#p3> a mifesto:Page , mifesto:Component ;
+    rdfs:comment "This is the project page of the application" ;
+    mifesto:hasDimensionSetting <#dimset1> ;
+    mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/project-page/main/manifest.ttl> ;
+    mifesto:hasRoute "/project" .
+
+<#p2> a mifesto:Page , mifesto:Component , mifesto:AuthPage ;
+    rdfs:comment "This is the auth page of the application" ;
+    mifesto:hasRoute "/auth" ;
+    mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/auth-page/main/manifest.ttl> .
+
+<#m1> a mifesto:Component, mifesto:OrganisationalComponent ;
+    mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/damage-module/main/manifest.ttl> .
