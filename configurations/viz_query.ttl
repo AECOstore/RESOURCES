@@ -14,14 +14,14 @@ rdfs:comment   """This is a demo configuration, featuring a 3D geometry viewer a
 <#p1> a mifesto:Page , mifesto:Component ;
     rdfs:comment "This is the demo page of the application" ;
     mifesto:hasDimensionSetting <#dimset1> ;
-    mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/demo-page/main/manifest.ttl> ;
+    mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/demo-page/main/public/manifest.ttl> ;
     mifesto:hosts <#m1>, <#m2> ;
     mifesto:hasRoute "/" .
 
 <#p3> a mifesto:Page , mifesto:Component ;
     rdfs:comment "This is the project page of the application" ;
     mifesto:hasDimensionSetting <#dimset1> ;
-    mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/project-page/main/manifest.ttl> ;
+    mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/project-page/main/public/manifest.ttl> ;
     mifesto:hasRoute "/project" .
 
 <#dimset1> a mifesto:GridDimensionSetting .
@@ -29,18 +29,18 @@ rdfs:comment   """This is a demo configuration, featuring a 3D geometry viewer a
 <#p2> a mifesto:Page , mifesto:Component , mifesto:AuthPage ;
     rdfs:comment "This is the auth page of the application" ;
     mifesto:hasRoute "/auth" ;
-    mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/auth-page/main/manifest.ttl> .
+    mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/auth-page/main/public/manifest.ttl> .
 
 <#m1> a mifesto:Component, mifesto:OrganisationalComponent ;
-    mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/tabs-module/main/manifest.ttl> ;
+    mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/tabs-module/main/public/manifest.ttl> ;
     mifesto:hasDimensions <#dim1> ;
     mifesto:hosts <#m1_1>.
 
 <#m1_1> a mifesto:Component ;
-    mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/query-module/main/manifest.ttl> .
+    mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/query-module/main/public/manifest.ttl> .
     
 <#m2> a mifesto:Component ;
-    mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/viewer-module/main/manifest.ttl> ;
+    mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/viewer-module/main/public/manifest.ttl> ;
     mifesto:hasDimensions <#dim2> .
 
 <#dim1> mifesto:initialColumns 5 ;
