@@ -9,7 +9,7 @@
 rdfs:label "Damage enrichment" ;
 rdfs:comment   """This is a demo configuration, featuring a damage enrichment module which dynamically loads other modules based on the available project data.""" ;
     mifesto:hosts <#p1>, <#p2>, <#p3> ;
-    mifesto:initialRoute "/project".
+    mifesto:initialRoute "/auth".
 
 <#p1> a mifesto:Page , mifesto:Component ;
     rdfs:comment "This is the demo page of the application" ;
@@ -30,4 +30,18 @@ rdfs:comment   """This is a demo configuration, featuring a damage enrichment mo
     mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/auth-page/main/public/manifest.ttl> .
 
 <#m1> a mifesto:Component, mifesto:OrganisationalComponent ;
+    mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/tabs-module/main/public/manifest.ttl> ;
+    mifesto:hasDimensions <#dim1> ;
+    mifesto:hosts <#m1_1>.
+
+
+<#m1_1> a mifesto:Component, mifesto:OrganisationalComponent ;
     mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/damage-module/main/public/manifest.ttl> .
+
+
+<#dimset1> a mifesto:GridDimensionSetting .
+<#dim1> mifesto:initialColumns 5 ;
+    mifesto:initialRows 8 .    
+
+<#dim2> mifesto:initialColumns 7 ;
+    mifesto:initialRows 4 .

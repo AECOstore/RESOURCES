@@ -9,7 +9,7 @@
 rdfs:label "Query and Visualize" ;
 rdfs:comment   """This is a demo configuration, featuring a 3D geometry viewer and an SPARQL query module. Select elements with the query module and see the corresponding elements highlighted in the 3D viewer.""" ;
     mifesto:hosts <#p1>, <#p2>, <#p3> ;
-    mifesto:initialRoute "/project".
+    mifesto:initialRoute "/auth".
 
 <#p1> a mifesto:Page , mifesto:Component ;
     rdfs:comment "This is the demo page of the application" ;
