@@ -48,10 +48,10 @@ rdfs:comment   """This is a demo configuration, featuring a damage enrichment mo
 
 <#dimset1> a mifesto:GridDimensionSetting .
 <#dim1> mifesto:initialColumns 4 ;
-    mifesto:initialRows 8 .    
+    mifesto:initialRows 10 .    
 
 <#dim2> mifesto:initialColumns 4 ;
-    mifesto:initialRows 4 .
+    mifesto:initialRows 10 .
 
 <#dim3> mifesto:initialColumns 4 ;
-    mifesto:initialRows 4 .
+    mifesto:initialRows 10 .
