@@ -47,11 +47,11 @@ rdfs:comment   """This is a demo configuration, featuring a damage enrichment mo
     mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/image-module/main/public/manifest.ttl> .
 
 <#dimset1> a mifesto:GridDimensionSetting .
-<#dim1> mifesto:initialColumns 5 ;
+<#dim1> mifesto:initialColumns 4 ;
     mifesto:initialRows 8 .    
 
 <#dim2> mifesto:initialColumns 4 ;
-    mifesto:initialRows 3 .
+    mifesto:initialRows 4 .
 
-<#dim3> mifesto:initialColumns 3 ;
+<#dim3> mifesto:initialColumns 4 ;
     mifesto:initialRows 4 .
