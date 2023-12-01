@@ -16,7 +16,7 @@ rdfs:comment   """This is a demo configuration, featuring a damage enrichment mo
     mifesto:hasDimensionSetting <#dimset1> ;
     mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/demo-page/main/public/manifest.ttl> ;
     mifesto:hosts <#m1>;
- mifesto:hosts <#m2>, <#m3> ;
+ mifesto:hosts <#m2>;
     mifesto:hasRoute "/" .
 
 <#p3> a mifesto:Page , mifesto:Component ;
@@ -41,10 +41,6 @@ rdfs:comment   """This is a demo configuration, featuring a damage enrichment mo
 <#m2> a mifesto:Component ;
     mifesto:hasDimensions <#dim2> ;
     mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/image-module/main/public/manifest.ttl> .
-
-<#m3> a mifesto:Component ;
-    mifesto:hasDimensions <#dim3> ;
-    mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/viewer-module/main/public/manifest.ttl> .
 
 <#dimset1> a mifesto:GridDimensionSetting .
 <#dim1> mifesto:initialColumns 5 ;
