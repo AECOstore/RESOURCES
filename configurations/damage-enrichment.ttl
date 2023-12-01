@@ -40,17 +40,17 @@ rdfs:comment   """This is a demo configuration, featuring a damage enrichment mo
 
 <#m2> a mifesto:Component ;
     mifesto:hasDimensions <#dim2> ;
-    mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/image-module/main/public/manifest.ttl> .
+    mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/viewer-module/main/public/manifest.ttl> .
 
 <#m3> a mifesto:Component ;
     mifesto:hasDimensions <#dim3> ;
-    mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/viewer-module/main/public/manifest.ttl> .
+    mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/image-module/main/public/manifest.ttl> .
 
 <#dimset1> a mifesto:GridDimensionSetting .
 <#dim1> mifesto:initialColumns 5 ;
     mifesto:initialRows 8 .    
 
-<#dim2> mifesto:initialColumns 3 ;
+<#dim2> mifesto:initialColumns 4 ;
     mifesto:initialRows 3 .
 
 <#dim3> mifesto:initialColumns 3 ;
