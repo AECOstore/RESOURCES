@@ -50,8 +50,8 @@ rdfs:comment   """This is a demo configuration, featuring a damage enrichment mo
 <#dim1> mifesto:initialColumns 5 ;
     mifesto:initialRows 8 .    
 
-<#dim2> mifesto:initialColumns 7 ;
+<#dim2> mifesto:initialColumns 3 ;
     mifesto:initialRows 3 .
 
-<#dim3> mifesto:initialColumns 7 ;
+<#dim3> mifesto:initialColumns 3 ;
     mifesto:initialRows 4 .
