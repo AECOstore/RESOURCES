@@ -33,14 +33,10 @@ rdfs:comment   """This is a demo configuration, featuring a damage enrichment mo
 <#m1> a mifesto:Component, mifesto:OrganisationalComponent ;
     mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/tabs-module/main/public/manifest.ttl> ;
     mifesto:hasDimensions <#dim1> ;
-    mifesto:hosts <#m1_1>, <#m1_2> .
+    mifesto:hosts <#m1_1>.
 
 <#m1_1> a mifesto:Component ;
     mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/damage-module/main/public/manifest.ttl> .
-
-
-<#m1_2> a mifesto:Component ;
-    mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/query-module/main/public/manifest.ttl> .
 
 <#m2> a mifesto:Component ;
     mifesto:hasDimensions <#dim2> ;
