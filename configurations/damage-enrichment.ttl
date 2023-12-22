@@ -19,7 +19,7 @@ rdfs:comment   """This is a demo configuration, featuring a damage enrichment mo
     mifesto:hosts <#m2>;
     mifesto:hasRoute "/" .
 
-<#m1> a mifesto:Component ;
+<#m2> a mifesto:Component ;
     mifesto:hasModule <https://raw.githubusercontent.com/AECOstore/viewer-module/main/public/manifest.ttl> ;
     mifesto:hasDimensions <#dim2> .
 
